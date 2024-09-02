@@ -36,9 +36,31 @@ InstaStore is a microservice responsible for selecting the nearest "convenience"
 
 ## Improvements and trade-offs
 1. **What would you improve in your code? Why?**
+  - adding testing, documentation, a cache layer for incoming requests and error handling, Basic authentication, and security
 2. **What trade-offs would you make to accomplish this on time? What would you do next time to deliver more and sacrifice less?**
+  - The cache layer 
 3. **Do you think your service is secure? Why?**
+  - CUrrently the service is not secured, but we will add it in the next iteration
 4. **What would you do to measure the behavior of your product in a production environment?**
+ - Adding a monitoring system to track the performance of the service like ELK stack 
 
 ## How run the project
+- Clone the project
+- Install the dependencies
+- Create a .env file with the following content
+```
+PORT=
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+DB_PORT=
+```
+- Run the project
+```
+npm run dev
+```
 
+### Docker
+1. Clone the project
+2. Run docker-compose up
